@@ -30,9 +30,9 @@ import io
 import logging
 
 bot = Client("bot",
-             bot_token= "6756823663:AAFVW3NDF0EB2UsTarqMxVqi0g5_ZjXXs3o",
-             api_id= 20225480,
-             api_hash= "70f93c98c61a40f69c0f830bd4fece7c")
+             bot_token= "7030652106:AAGo9gu67h_NT7EYM6SsT4PXkBlf7nTxrdM",
+             api_id= 27184026,
+             api_hash= "4c26e2cb6c6d9d57841b3c5ab6bb7605")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -47,7 +47,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["mybro"]))
+@bot.on_message(filters.command(["silent"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
